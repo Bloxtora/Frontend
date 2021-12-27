@@ -1,0 +1,500 @@
+<title>Profile - Bloxtora</title>
+<style>
+body {
+  background-color: #316591;
+  font-family: Arial;
+  color: #ffffff;
+}
+
+.topbarcontainer {
+  min-height: 50px;
+  max-width: 1140px;
+}
+
+.topbarbannerlogo {
+  float: left;
+}
+
+.smallbutton {
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #5188e0;
+  border: transparent;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.seeallbutton {
+  float: right;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #5188e0;
+  border: transparent;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.bluebutton {
+  cursor: pointer;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #5188e0;
+  border-radius: 3px;
+  border: 1px solid #5188e0;
+  font-size: 0.9rem;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.bluebutton:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+.bluebutton:active {
+  color: #ffffff;
+  background-color: #3c67ab;
+  border: 1px solid #3c67ab;
+}
+
+.greenbutton {
+  cursor: pointer;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #2db551;
+  border-radius: 3px;
+  border: 1px solid #2db551;
+  font-size: 0.9rem;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+}
+.greenbutton:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+.greenbutton:active {
+  color: #ffffff;
+  background-color: #258f41;
+  border: 1px solid #258f41;
+}
+
+.whitetext{
+  color: #ffffff
+}
+
+.maincontentarea {
+  width: 90%;
+  float: left;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #303030;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contentdivider {
+  padding: 10px;
+}
+
+.headertext {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.smalltext {
+  font-size: 0.8rem;
+}
+
+.textbox {
+  padding: 5px;
+  max-width: 150px;
+  background-color: #242424;
+  border-radius: 3px;
+  border: 1px solid #969696;
+  color: #ffffff
+}
+
+.headerbox {
+  border-bottom: 1px solid #aaaaaa
+}
+
+.bottomlinks {
+  max-width: 1140px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  background: transparent;
+}
+
+.topbarbox {
+  max-width: 1140px;
+}
+.topbarmain {
+  background-color: #3892ff;
+  padding: 7px;
+  border-bottom: 1px solid #ffffff;
+  min-height: 25px
+}
+.topbarloggedin {
+  max-width: 1140px;
+  background-color: #479aff;
+  padding: 5px;
+  color: #ffffff;
+}
+.topbarbiglink {
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding: 5px;
+}
+.topbarmaincontent {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  min-height: 25px;
+}
+.topbarmainlinks {
+  float: right
+}
+.topbaruserinfo {
+  float: left
+}
+.topbarcurrencyandfriendsinfo {
+  float: right;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.topbarusernamebox {
+  cursor: pointer;
+  color: #ffffff;
+  float: left;
+  font-size: 1.3rem;
+  padding-right: 5px;
+}
+.topbarcurrencyicon {
+  max-width: 25px;
+  max-height: 25px;
+  cursor: pointer;
+}
+.smalltopbarlinkspadding {
+  padding: 5px;
+}
+
+.horizontaloption {
+  cursor: pointer;
+  padding: 7px;
+  border: 0px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  background: transparent;
+}
+
+.horizontaloptionselected {
+  cursor: pointer;
+  padding: 7px;
+  border-left: 0px solid #ffffff;
+  border: transparent;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: #316591;
+}
+
+.profilecenteredcontent {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftarea {
+  float: left;
+  width: 48%;
+}
+.rightarea {
+  float: left;
+  width: 48%;
+}
+.card {
+  background-color: #303030;
+  border-radius: 5px;
+  padding: 10px;
+  width: 95%;
+}
+
+.statusdot {
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  background-color: #a2a2a2;
+  float: none;
+  display: inline-block
+}
+.onlinestatusdot {
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+  background-color: #18c962;
+  float: none;
+  display: inline-block
+}
+.profilecard {
+  width: 128px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+}
+.profilecardimage {
+  width: 124px;
+  height: 124px;
+}
+</style>
+
+<center>
+<div class="topbarbox">
+  <div class="topbarmain">
+    <div class="topbarmaincontent">
+      <div class="topbarmainlinks">
+        <a class="topbarbiglink">Games</a>
+        <a class="topbarbiglink">Shop</a>
+        <a class="topbarbiglink">Players</a>
+        <a class="topbarbiglink">Forum</a>
+        <a class="topbarbiglink">Communities</a>
+        <a class="topbarbiglink">Donate</a>
+      </div>
+      <!--- Only shows this if you are logged into an account. --->
+      <div class="topbaruserinfo">
+        <div class="topbarcurrencyandfriendsinfo">
+          <img src="https://i.imgur.com/GEJZrgY.png" class="topbarcurrencyicon">
+          <a>0</a>
+          <img src="https://i.imgur.com/OsDzUzR.png" class="topbarcurrencyicon">
+          <a>0</a>
+          <img src="https://i.imgur.com/7iikmoh.png" class="topbarcurrencyicon">
+          <a>0</a>
+        </div>
+        <div class="topbarusernamebox">
+          <a>Hello, </a>
+          <a>Username</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--- Only shows this if you are logged into an account. --->
+<div class="topbarloggedin">
+  <center>
+    <a class="smalltopbarlinkspadding">Home</a>
+    <a class="smalltopbarlinkspadding">Profile</a>
+    <a class="smalltopbarlinkspadding">Avatar</a>
+    <a class="smalltopbarlinkspadding">Create</a>
+    <a class="smalltopbarlinkspadding">Money</a>
+    <a class="smalltopbarlinkspadding">Friends</a>
+    <a class="smalltopbarlinkspadding">Social Links</a>
+  </center>
+</div>
+</center>
+
+<div class="contentdivider"></div>
+<div class="profilecenteredcontent">
+  <div class="maincontentarea">
+    <div class="headerbox">
+      <a class="headertext">Status</a>
+    </div>
+    <a>User status goes here. Minimum of 1 character, maximum of 130 characters</a>
+  </div>
+
+  <div class="leftarea">
+    <div class="card">
+      <center>
+        <div class="statusdot"></div>
+        <a class="headertext">Username</a>
+        <br>
+        <img src="https://i.imgur.com/5A59pn7.png" style="max-height:350px; max-width:350px;">
+        <br>
+        <button class="smallbutton">Message</button>
+        <button class="smallbutton">Friend</button>
+        <button class="smallbutton">Ban</button>
+        <button class="smallbutton">Unban</button>
+        <button class="smallbutton">Mop Username</button>
+        <button class="smallbutton">Mop Description</button>
+        <button class="smallbutton">Refresh Avatar</button>
+      </center>
+    </div>
+    <div class="contentdivider"></div>
+    <div class="card">
+      <div class="headerbox">
+        <a class="headertext">Achievements</a>
+      </div>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/4ZD2PZA.png">
+          <a>Admin</a>
+        </div>
+      </a>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/7gPqo77.png">
+          <a>Developer</a>
+        </div>
+      </a>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/bBS0V5g.png">
+          <a>Moderator</a>
+        </div>
+      </a>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/QTmHhgz.png">
+          <a>Reconized</a>
+        </div>
+      </a>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/R5KmvOv.png">
+          <a>Donator</a>
+        </div>
+      </a>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/aZSfo3R.png">
+          <a>Getting started</a>
+        </div>
+      </a>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/VnFI5Ya.png">
+          <a>Well-known</a>
+        </div>
+      </a>
+      <a href="/achievements" style="color: #303030;">
+        <div class="profilecard">
+          <img class="profilecardimage" src="https://i.imgur.com/7HFw68C.png">
+          <a>Famous</a>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="rightarea">
+    <div class="card">
+      <div class="headerbox">
+        <a class="headertext">Statistics</a>
+      </div>
+      <a style="font-weight:bold;">Join Date:</a>
+      <a>1/1/1970</a>
+      <br>
+      <a style="font-weight:bold;">Last Online:</a>
+      <a>1 hour ago</a>
+      <br>
+      <a style="font-weight:bold;">Forum Posts:</a>
+      <a>0</a>
+      <br>
+      <a style="font-weight:bold;">Friends:</a>
+      <a>0</a>
+    </div>
+    <div class="contentdivider"></div>
+    <div class="card">
+      <div class="headerbox">
+        <a class="headertext">About</a>
+      </div>
+      <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</a>
+    </div>
+    <div class="contentdivider"></div>
+    <div class="card">
+      <div class="headerbox">
+        <a class="headertext">Friends</a>
+        <button class="smallbutton" style="float:right;">View All</button>
+      </div>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="https://i.imgur.com/5A59pn7.png" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Username</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="https://i.imgur.com/5A59pn7.png" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Username</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="https://i.imgur.com/5A59pn7.png" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Username</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="https://i.imgur.com/5A59pn7.png" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Username</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="https://i.imgur.com/5A59pn7.png" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Username</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="https://i.imgur.com/5A59pn7.png" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Username</a>
+        </div>
+      </a>
+    </div>
+    <div class="contentdivider"></div>
+    <div class="card">
+      <div class="headerbox">
+        <a class="headertext">Communities</a>
+        <button class="smallbutton" style="float:right;">View All</button>
+      </div>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;;">Community Name 43213</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Community Name 43213</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Community Name 43213</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Community Name 43213</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Community Name 43213</a>
+        </div>
+      </a>
+      <a href="alpha.bloxtora.site">
+        <div class="profilecard">
+          <img src="" class="profilecardimage"></img>
+          <a style="text-overflow: ellipsis;overflow: hidden;white-space: nowrap;">Community Name 43213</a>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="contentdivider"></div>
+  <div class="maincontentarea">
+    <div class="headerbox">
+      <div class="headertext">Inventory</div>
+    </div>
+    <a>Inventory is coming soon.</a>
+  </div>
+</div>

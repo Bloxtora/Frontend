@@ -1,0 +1,431 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Forum - Bloxtora</title>
+<style>
+
+  body {
+    background-color: #316591;
+    font-family: Arial;
+    color: #ffffff;
+  }
+
+  .topbarcontainer {
+    min-height: 50px;
+    max-width: 1140px;
+  }
+
+  .topbarbannerlogo {
+    float: left;
+  }
+
+  .bluebutton {
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #5188e0;
+    border-radius: 3px;
+    border: 1px solid #5188e0;
+    font-size: 0.9rem;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  .bluebutton:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .bluebutton:active {
+    color: #ffffff;
+    background-color: #3c67ab;
+    border: 1px solid #3c67ab;
+  }
+
+  .greenbutton {
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #2db551;
+    border-radius: 3px;
+    border: 1px solid #2db551;
+    font-size: 0.9rem;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  .greenbutton:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .greenbutton:active {
+    color: #ffffff;
+    background-color: #258f41;
+    border: 1px solid #258f41;
+  }
+
+  .whitetext{
+    color: #ffffff
+  }
+
+  .maincontentarea {
+    max-width: 1140px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #303030;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .contentdivider {
+    padding: 10px;
+  }
+
+  .headertext {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .smalltext {
+    font-size: 0.8rem;
+  }
+
+  .textbox {
+    padding: 5px;
+    max-width: 150px;
+    background-color: #242424;
+    border-radius: 3px;
+    border: 1px solid #969696;
+    color: #ffffff
+  }
+
+  .headerbox {
+    border-bottom: 1px solid #aaaaaa
+  }
+
+  .bottomlinks {
+    max-width: 1140px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background: transparent;
+  }
+
+  .topbarbox {
+    max-width: 1140px;
+  }
+  .topbarmain {
+    background-color: #3892ff;
+    padding: 7px;
+    border-bottom: 1px solid #ffffff;
+    min-height: 25px
+  }
+  .topbarloggedin {
+    max-width: 1140px;
+    background-color: #479aff;
+    padding: 5px;
+    color: #ffffff;
+  }
+  .topbarbiglink {
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 5px;
+  }
+  .topbarmaincontent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    min-height: 25px;
+  }
+  .topbarmainlinks {
+    float: right
+  }
+  .topbaruserinfo {
+    float: left
+  }
+  .topbarcurrencyandfriendsinfo {
+    float: right;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #000000;
+  }
+  .topbarusernamebox {
+    cursor: pointer;
+    color: #ffffff;
+    float: left;
+    font-size: 1.3rem;
+    padding-right: 5px;
+  }
+  .topbarcurrencyicon {
+    max-width: 25px;
+    max-height: 25px;
+    cursor: pointer;
+  }
+  .smalltopbarlinkspadding {
+    padding: 5px;
+  }
+
+  .sidebarbox {
+    max-width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #303030;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .sidebaroption {
+    cursor: pointer;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: transparent;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background: transparent;
+  }
+  .sidebaroption:hover {
+    background-color: #404040;
+    border-radius: 2px;
+  }
+
+  .sidebaroptionselected {
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #363636;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    border-left: 5px solid #5188e0;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+    font-family: arial;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .mainboxarea {
+    display: flex;
+  }
+
+  .createnewpostbutton {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #2db551;
+    border-radius: 3px;
+    border: 1px solid #2db551;
+    font-size: 0.9rem;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+  .createnewpostbutton:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .createnewpostbutton:active {
+    color: #ffffff;
+    background-color: #258f41;
+    border: 1px solid #258f41;
+  }
+  .createnewpostbutton:disabled {
+    color: #a8a8a8;
+    background-color: #1b662e;
+    border: 1px solid #1b662e;
+    cursor: default;
+  }
+
+  .maincontentandsidebardivider {
+    padding: 10px;
+  }
+  .maincontentcenterer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1450px;
+  }
+
+  .subforumlinkbox {
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0px;
+    border: transparent;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    background-color: #363636;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .subforumlinkbox:hover {
+    background-color: #404040;
+  }
+  .subforumtextheader {
+    font-weight: bold;
+  }
+  .subforumtextsmaller {
+    font-size: 0.9rem;
+  }
+</style>
+
+<center>
+<div class="topbarbox">
+  <div class="topbarmain">
+    <div class="topbarmaincontent">
+      <div class="topbarmainlinks">
+        <a class="topbarbiglink">Games</a>
+        <a class="topbarbiglink">Shop</a>
+        <a class="topbarbiglink">Players</a>
+        <a class="topbarbiglink">Forum</a>
+        <a class="topbarbiglink">Communities</a>
+        <a class="topbarbiglink">Donate</a>
+      </div>
+      <!--- Only shows this if you are logged into an account. --->
+      <div class="topbaruserinfo">
+        <div class="topbarcurrencyandfriendsinfo">
+          <img src="https://i.imgur.com/GEJZrgY.png" class="topbarcurrencyicon">
+          <a>0</a>
+          <img src="https://i.imgur.com/OsDzUzR.png" class="topbarcurrencyicon">
+          <a>0</a>
+          <img src="https://i.imgur.com/7iikmoh.png" class="topbarcurrencyicon">
+          <a>0</a>
+        </div>
+        <div class="topbarusernamebox">
+          <a>Hello, </a>
+          <a>Username</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--- Only shows this if you are logged into an account. --->
+<div class="topbarloggedin">
+  <center>
+    <a class="smalltopbarlinkspadding">Home</a>
+    <a class="smalltopbarlinkspadding">Profile</a>
+    <a class="smalltopbarlinkspadding">Avatar</a>
+    <a class="smalltopbarlinkspadding">Create</a>
+    <a class="smalltopbarlinkspadding">Money</a>
+    <a class="smalltopbarlinkspadding">Friends</a>
+    <a class="smalltopbarlinkspadding">Social Links</a>
+  </center>
+</div>
+</center>
+
+<div class="contentdivider"></div>
+<div class="maincontentcenterer">
+<div class="mainboxarea">
+  <div class="sidebarbox">
+    <div class="headerbox">
+      <a class="headertext">Forum</a>
+    </div>
+    <a>Chat with others, ask for help or report bugs all in the many different subforums!</a>
+    <p></p>
+    <p></p>
+    <button class="sidebaroptionselected" onclick="location.href='https://alpha.bloxtora.site/forum.html'">Home</button>
+    <p></p>
+    <a>Pinned Posts</a>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/forumpost/1.html'">Forum Rules</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/forumpost/2.html'">Forum Guide</button>
+    <p></p>
+    <a>News</a>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">News and announcements</button>
+    <p></p>
+    <a>Bloxtora Discussion</a>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/2.html'">Bloxtora Talk</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/3.html'">Market</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/4.html'">Community Discussion</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/5.html'">Help and Support</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/6.html'">Ideas, Feedback and Suggestions</button>
+    <p></p>
+    <a>Other</a>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/7.html'">Off-Topic</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/8.html'">Game and Media Discussion</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/9.html'">Creativity</button>
+    <button class="sidebaroption" onclick="location.href='https://alpha.bloxtora.site/subforum/10.html'">Forum Games</button>
+  </div>
+  <div class="maincontentandsidebardivider"></div>
+  <div class="maincontentarea">
+    <div class="headerbox">
+      <a class="headertext">Home</a>
+    </div>
+    <a>See a list of all the subforums on the Bloxtora forums. If you aren't sure what a subforum is for, look at the description of it under it's name. Remember to follow the rules by clicking the forum rules button. If you need help you can check the forum guide under the forum rules post. If that still doesn't help, ask on the Help and Support subforum.</a>
+    <p></p>
+    <button class="subforumlinkbox">Rules</button>
+    <button class="subforumlinkbox">Guide</button>
+    <p></p>
+    <div class="headerbox">
+      <a class="headertext">Subforums</a>
+    </div>
+    <a>News</a>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">News and announcements</a>
+      <br>
+      <a class="subforumtextsmaller">All the latest news and announcements from Bloxtora!</a>
+    </button>
+    <p></p>
+    <a>Bloxtora Discussion</a>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Bloxtora Talk</a>
+      <br>
+      <a class="subforumtextsmaller">Talk about anything related to Bloxtora!</a>
+    </button>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Market</a>
+      <br>
+      <a class="subforumtextsmaller">Promote your clothing and talk about the Bloxtora economy!</a>
+    </button>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Community Discussion</a>
+      <br>
+      <a class="subforumtextsmaller">Talk about and promote your communities!</a>
+    </button>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Help and Support</a>
+      <br>
+      <a class="subforumtextsmaller">Looking for help or looking to give help? Post in here!</a>
+    </button>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Ideas, Feedback and Suggestions</a>
+      <br>
+      <a class="subforumtextsmaller">Have any great ideas or feedback or Bloxtora? Post them in here!</a>
+    </button>
+    <p></p>
+    <a>Other</a>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Off-Topic</a>
+      <br>
+      <a class="subforumtextsmaller">Talk about anything not related to Bloxtora</a>
+    </button>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Game and Media Discussion</a>
+      <br>
+      <a class="subforumtextsmaller">Talk about games and other media here!</a>
+    </button>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Creativity</a>
+      <br>
+      <a class="subforumtextsmaller">Show off your creativity and talent here!</a>
+    </button>
+    <button class="subforumlinkbox" onclick="location.href='https://alpha.bloxtora.site/subforum/1.html'">
+      <a class="subforumtextheader">Forum Games</a>
+      <br>
+      <a class="subforumtextsmaller">Play fun little games on the forums!</a>
+    </button>
+  </div>
+</div>
+</div>
+
+<div class="contentdivider"></div>
+<div class="bottomlinks">
+  <center>
+    <a class="whitetext">Bloxtora Alpha</a>
+    <p></p>
+    <a class="whitetext">Staff</a>
+    <a class="whitetext"> - </a>
+    <a class="whitetext">Terms of Service</a>
+    <a class="whitetext"> - </a>
+    <a class="whitetext">Privacy Policy</a>
+  </center>
+</div>

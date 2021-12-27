@@ -1,0 +1,334 @@
+<title>Shop - Bloxtora</title>
+<style>
+  body {
+    background-color: #316591;
+    font-family: Arial;
+    color: #ffffff;
+  }
+  .headerbox {
+    border-bottom: 1px solid #aaaaaa
+  }
+  .headertext {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .bottomlinks {
+    max-width: 1140px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background: transparent;
+  }
+
+  .topbarbox {
+    max-width: 1140px;
+  }
+  .topbarmain {
+    background-color: #3892ff;
+    padding: 7px;
+    border-bottom: 1px solid #ffffff;
+    min-height: 25px
+  }
+  .topbarloggedin {
+    max-width: 1140px;
+    background-color: #479aff;
+    padding: 5px;
+    color: #ffffff;
+  }
+  .topbarbiglink {
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 5px;
+  }
+  .topbarmaincontent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    min-height: 25px;
+  }
+  .topbarmainlinks {
+    float: right
+  }
+  .topbaruserinfo {
+    float: left
+  }
+  .topbarcurrencyandfriendsinfo {
+    float: right;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #000000;
+  }
+  .topbarusernamebox {
+    cursor: pointer;
+    color: #ffffff;
+    float: left;
+    font-size: 1.3rem;
+    padding-right: 5px;
+  }
+  .topbarcurrencyicon {
+    max-width: 25px;
+    max-height: 25px;
+    cursor: pointer;
+  }
+  .smalltopbarlinkspadding {
+    padding: 5px;
+  }
+  .contentholder {
+    max-width: 1200px;
+    min-width: 700px;
+    margin: auto;
+  }
+  .shopbar {
+    width: 100%;
+    background: #303030;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .searchbox {
+    width: 80%;
+    background: #3e3e3e;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    height: 20px;
+    color: #fff;
+    margin-left: 25px;
+    padding: 15px 10px;
+  }
+  .searchbox:focus-visible {
+    outline: transparent;
+  }
+  .searchbutton {
+    cursor: pointer;
+    background: #0079db;
+    border: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+  }
+
+  .createitembutton {
+    cursor: pointer;
+    background: #63ab3c;
+    border: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+  }
+  .sidebaranditemsholder {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sidebarholder {
+    float: left;
+    width: 250px;
+  }
+  .sidebarsorting {
+    background: #303030;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .mainitemarea {
+    float: right;
+    background: #303030;
+    width: 945px;
+    border-radius: 5px;
+  }
+  .mainitemareapadding {
+    padding: 5px;
+  }
+  .itemcard {
+    overflow: hidden;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 10px;
+  }
+  .itemcardpreview {
+    width: 100%;
+    height: 70%;
+    background: #4a4a4a;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .itemcardimage {
+    width: 125px;
+    height: 125px;
+    box-sizing: border-box;
+  }
+  .itemcardinfo {
+    padding: 2px;
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+  }
+  .itemname {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .sidebaroption {
+    cursor: pointer;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: transparent;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background: transparent;
+    margin-bottom: 5px;
+  }
+  .sidebaroption:hover {
+    background-color: #404040;
+    border-radius: 2px;
+  }
+
+  .sidebaroptionselected {
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #363636;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    border-left: 5px solid #5188e0;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+    font-family: arial;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .sidebaroptionholder {
+    width: 95%;
+  }
+</style>
+
+<center>
+<div class="topbarbox">
+  <div class="topbarmain">
+    <div class="topbarmaincontent">
+      <div class="topbarmainlinks">
+        <a class="topbarbiglink">Games</a>
+        <a class="topbarbiglink">Shop</a>
+        <a class="topbarbiglink">Players</a>
+        <a class="topbarbiglink">Forum</a>
+        <a class="topbarbiglink">Communities</a>
+        <a class="topbarbiglink">Donate</a>
+      </div>
+      <!--- Only shows this if you are logged into an account. --->
+      <div class="topbaruserinfo">
+        <div class="topbarcurrencyandfriendsinfo">
+          <img src="https://i.imgur.com/GEJZrgY.png" class="topbarcurrencyicon">
+          <a>0</a>
+          <img src="https://i.imgur.com/OsDzUzR.png" class="topbarcurrencyicon">
+          <a>0</a>
+          <img src="https://i.imgur.com/7iikmoh.png" class="topbarcurrencyicon">
+          <a>0</a>
+        </div>
+        <div class="topbarusernamebox">
+          <a>Hello, </a>
+          <a>Username</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--- Only shows this if you are logged into an account. --->
+<div class="topbarloggedin">
+  <center>
+    <a class="smalltopbarlinkspadding">Home</a>
+    <a class="smalltopbarlinkspadding">Profile</a>
+    <a class="smalltopbarlinkspadding">Avatar</a>
+    <a class="smalltopbarlinkspadding">Create</a>
+    <a class="smalltopbarlinkspadding">Money</a>
+    <a class="smalltopbarlinkspadding">Friends</a>
+    <a class="smalltopbarlinkspadding">Social Links</a>
+  </center>
+</div>
+</center>
+
+<div class="contentholder">
+  <div class="shopbar">
+    <input type="text" class="searchbox" placeholder="Search for an item"></input>
+    <button class="searchbutton">Search</button>
+    <button class="createitembutton">Create</button>
+  </div>
+  <div class="sidebaranditemsholder">
+    <div class="sidebarholder">
+      <div class="sidebarsorting">
+        <a style="font-weight:600;font-size:1.3rem;">Shop</a>
+        <br>
+        <a>Sort</a>
+        <select style="width:100%;background:#3e3e3e;color:#fff;border:1px solid #fff;">
+          <option>Recently Updated</option>
+          <option>Newest First</option>
+          <option>Oldest First</option>
+          <option>Most Expensive</option>
+          <option>Least Expensive</option>
+        </select>
+        <p></p>
+        <a>Sort By Category:</a>
+        <br>
+        <div class="sidebaroptionholder">
+        <a class="sidebaroptionselected">All</a>
+        <a class="sidebaroption">Hats</a>
+        <a class="sidebaroption">Tools</a>
+        <a class="sidebaroption">Faces</a>
+        <a class="sidebaroption">T-Shirts</a>
+        <a class="sidebaroption">Pants</a>
+        </div>
+      </div>
+      <div class="sidebarsorting">
+        <a style="font-size:1.1rem;">Guide</a>
+        <br>
+        <a>Relics:</a>
+        <br>
+        <a>If an item has a label on it that says "relic" then that means users who own it can resell it at any price and trade it for other relics.</a>
+      </div>
+    </div>
+    <div class="mainitemarea">
+      <div class="mainitemareapadding">
+        <div class="itemcard">
+          <div class="itemcardpreview">
+            <img src="https://i.imgur.com/5A59pn7.png" class="itemcardimage">
+          </div>
+          <div class="itemcardinfo">
+            <span class="itemname">work in progress (obviously)</span>
+            <br>
+            by joe
+            <br>
+            price: mama
+          </div>
+        </div>
+        <div class="itemcard">
+          <div class="itemcardpreview">
+            <img src="https://i.imgur.com/5A59pn7.png" class="itemcardimage">
+          </div>
+          <div class="itemcardinfo">
+            <span class="itemname">work in progress (obviously)</span>
+            <br>
+            by joe
+            <br>
+            price: mama
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
